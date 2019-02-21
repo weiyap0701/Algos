@@ -29,7 +29,7 @@ class LRUSectionCell : UICollectionViewCell {
     }
     
     private func createView() {
-        backgroundColor = .orange
+        backgroundColor = UIColor(red: 61/255, green: 30/255, blue: 109/255, alpha: 1)
         
         addSubview(titleLabel)
         titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true

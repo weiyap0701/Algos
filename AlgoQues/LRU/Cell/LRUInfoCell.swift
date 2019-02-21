@@ -31,7 +31,7 @@ class LRUInfoCell: UICollectionViewCell {
     }
     
     private func createView() {
-        backgroundColor = .purple
+        backgroundColor = UIColor(red: 136/255, green: 116/255, blue: 163/255, alpha: 1)
         
         addSubview(infoLabel)
         infoLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
