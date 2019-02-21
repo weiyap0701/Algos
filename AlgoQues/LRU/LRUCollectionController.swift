@@ -33,7 +33,7 @@ class LRUCollectionController: UICollectionViewController {
     }()
     
     //MARK: Variable
-    let cacheLRU = LRU<Int, String>(capacity: 3)
+    let cacheLRU = LRU<Int, String>(capacity: 5)
     var keyForCell = [Int: String]()
     var count = 0
     
