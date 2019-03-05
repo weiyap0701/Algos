@@ -11,14 +11,13 @@ enum Menu: String {
     case oneOfTwo
     case maze
     case LRU
-    case timeline
 }
 
 import UIKit
 
 class MenuTableController: UITableViewController {
 
-    var menuItems: [Menu] = [.maxOfThree, .oneOfTwo, .maze, .LRU, .timeline]
+    var menuItems: [Menu] = [.maxOfThree, .oneOfTwo, .maze, .LRU]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,8 +53,6 @@ class MenuTableController: UITableViewController {
         case .LRU:
             let vc = LRUCollectionController(collectionViewLayout: UICollectionViewFlowLayout())
             navigationController?.pushViewController(vc, animated: true)
-        default:
-            break
         }
     }
     
